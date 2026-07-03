@@ -1,0 +1,24 @@
+# User-uploaded media — large, constantly changing, not code
+uploads/
+
+# Third-party plugins (ACF Pro, Yoast, Safe SVG) — reinstalled per environment via WP-CLI/wp-admin, not tracked
+plugins/
+
+# Only the custom theme is tracked; ignore default/bundled WordPress themes
+themes/*
+!themes/gardenstatedivorce/
+
+# WordPress runtime/transient files
+upgrade/
+debug.log
+cache/
+
+# macOS
+.DS_Store
+
+# Build tooling, if you add a CSS/JS build step later
+node_modules/
+
+# WordPress core/scaffold boilerplate at the wp-content root — not customized
+/index.php
+/db-error.php
