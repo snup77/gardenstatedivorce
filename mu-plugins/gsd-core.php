@@ -7,3 +7,4 @@
 require_once __DIR__ . '/gsd-core/cpts.php';
 require_once __DIR__ . '/gsd-core/taxonomies.php';
 require_once __DIR__ . '/gsd-core/acf-fields.php';
+require_once __DIR__ . '/gsd-core/import/import-attorneys.php';
