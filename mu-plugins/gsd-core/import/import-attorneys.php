@@ -53,7 +53,7 @@ class GSD_Import_Command {
 		}
 
 		$this->import_firms( $data['firms'] ?? [] );
-		$this->import_offices( $data['offices'] ?? [], $data['attorney_locations'] ?? [] );
+		$this->import_offices( $data['offices'] ?? [] );
 		$this->import_attorneys(
 			$data['attorneys'] ?? [],
 			$data['education'] ?? [],
@@ -79,14 +79,7 @@ class GSD_Import_Command {
 		}
 	}
 
-	private function import_offices( $offices, $locations ) {
-		// Offices only carry a free-text city name, not a county reference,
-		// so build a city_slug -> county_slug lookup from attorney_locations.
-		$city_to_county = [];
-		foreach ( $locations as $loc ) {
-			$city_to_county[ $loc['city_slug'] ] = $loc['county_slug'];
-		}
-
+	private function import_offices( $offices ) {
 		foreach ( $offices as $office ) {
 			$firm_post_id = $this->firm_id_map[ $office['firm_id'] ] ?? 0;
 
@@ -114,14 +107,6 @@ class GSD_Import_Command {
 				'rating'        => $office['gbp_rating'] ?? '',
 				'review_number' => $office['gbp_review_number'] ?? '',
 			], $post_id );
-
-			$city_slug   = sanitize_title( $office['city'] );
-			$county_slug = $city_to_county[ $city_slug ] ?? null;
-			$city_term_id = $this->get_or_create_city_term( $city_slug, $county_slug );
-
-			if ( $city_term_id ) {
-				wp_set_object_terms( $post_id, [ $city_term_id ], 'attorney_location' );
-			}
 
 			$this->office_id_map[ $office['office_id'] ] = $post_id;
 			WP_CLI::log( "Office #{$office['office_id']} -> post #{$post_id} ({$office['city']})" );
@@ -204,11 +189,17 @@ class GSD_Import_Command {
 			], $assoc_rows ), $post_id );
 
 			$loc_rows = array_values( array_filter( $locations, fn( $l ) => $l['attorney_id'] === $att['attorney_id'] ) );
-			$term_ids = array_filter( array_map(
-				fn( $loc ) => $this->get_or_create_city_term( $loc['city_slug'], $loc['county_slug'] ),
-				$loc_rows
-			) );
-			wp_set_object_terms( $post_id, $term_ids, 'attorney_location' );
+			$term_ids = [];
+
+			foreach ( $loc_rows as $loc ) {
+				$term_ids[] = $this->get_or_create_city_term( $loc['city_slug'], $loc['county_slug'] );
+
+				if ( $loc['county_slug'] ) {
+					$term_ids[] = $this->get_or_create_county_term( $loc['county_slug'] );
+				}
+			}
+
+			wp_set_object_terms( $post_id, array_unique( array_filter( $term_ids ) ), 'attorney_location' );
 
 			WP_CLI::log( "Attorney #{$att['attorney_id']} -> post #{$post_id} ({$name})" );
 		}
