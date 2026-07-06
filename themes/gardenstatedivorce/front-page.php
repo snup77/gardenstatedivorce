@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<?php $gsd_attorney_count = wp_count_posts( 'attorney' )->publish; ?>
+
 <!-- =============================== hero =============================== -->
     <section class="hero">
       <div>
@@ -7,12 +9,9 @@
         <h1 class="hero__title">A divorce is hard enough. Finding the right attorney shouldn't be.</h1>
         <p class="hero__lede">Garden State Divorce is a curated roster of New Jersey's most recognized divorce attorneys &mdash; every one board-certified and vetted for reputation, so you can choose with confidence.</p>
         <div class="hero__actions">
-          <a class="btn btn--primary" href="directory.html">Find an Attorney</a>
-          <a class="link-arrow" href="#why">How we vet
-            <svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
-          </a>
+          <a class="btn btn--primary" href="divorce-attorneys/">Find an Attorney</a>
         </div>
-        <p class="hero__note">142 certified attorneys across New Jersey.</p>
+        <p class="hero__note"><?php echo esc_html( $gsd_attorney_count ); ?> divorce attorneys across New Jersey.</p>
       </div>
 
       <!-- trust panel -->
@@ -87,54 +86,70 @@
           <div class="kicker">The roster</div>
           <h2 class="section__title">Attorneys earning the top recognitions.</h2>
         </div>
-        <a class="link-arrow" href="directory.html">View all 142 attorneys
+        <a class="link-arrow" href="divorce-attorneys/">View all <?php echo esc_html( $gsd_attorney_count ); ?> attorneys
           <svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
         </a>
       </div>
 
       <div class="roster">
-        <!-- attorney card -->
-        <article class="attorney-card">
-          <div class="attorney-card__photo placeholder"><span class="placeholder__label">headshot</span></div>
-          <div class="attorney-card__body">
-            <div class="attorney-card__name">Eleanor Whitfield</div>
-            <div class="attorney-card__firm">Whitfield Family Law</div>
-            <div class="attorney-card__city">Princeton, NJ</div>
-            <div class="attorney-card__creds">
-              <div class="attorney-card__cred"><svg class="star" width="14" height="14" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>Certified Matrimonial Attorney</div>
-              <div class="attorney-card__cred"><svg class="star" width="14" height="14" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>Chambers High Net Worth</div>
-            </div>
-            <a class="btn btn--primary btn--sm" href="attorney-profile.html">View Profile</a>
-          </div>
-        </article>
+        <?php
+        $gsd_roster_query = new WP_Query( [
+          'post_type'      => 'attorney',
+          'post_status'    => 'publish',
+          'posts_per_page' => 3,
+          'orderby'        => 'rand',
+        ] );
+        ?>
+        <?php while ( $gsd_roster_query->have_posts() ) : $gsd_roster_query->the_post(); ?>
+          <?php
+          $firm     = get_field( 'firm' );
+          $office   = get_field( 'primary_office' );
+          $headshot = get_field( 'headshot' );
+          $city     = $office ? get_field( 'city', $office->ID ) : '';
+          $state    = $office ? get_field( 'state', $office->ID ) : '';
 
-        <article class="attorney-card">
-          <div class="attorney-card__photo placeholder"><span class="placeholder__label">headshot</span></div>
-          <div class="attorney-card__body">
-            <div class="attorney-card__name">David Brenner</div>
-            <div class="attorney-card__firm">Brenner Family Advocates</div>
-            <div class="attorney-card__city">Hoboken, NJ</div>
-            <div class="attorney-card__creds">
-              <div class="attorney-card__cred"><svg class="star" width="14" height="14" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>Certified Matrimonial Attorney</div>
-              <div class="attorney-card__cred"><svg class="star" width="14" height="14" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>AV Preeminent</div>
+          $creds = [];
+          if ( get_field( 'nj_matrimonial_cert' ) ) {
+            $creds[] = 'Certified Matrimonial Attorney';
+          }
+          if ( ! empty( get_field( 'super_lawyers' )['listed'] ) ) {
+            $creds[] = 'Super Lawyers';
+          }
+          if ( get_field( 'av_preeminent' ) ) {
+            $creds[] = 'AV Preeminent';
+          }
+          if ( ! empty( get_field( 'chambers' )['listed'] ) ) {
+            $creds[] = 'Chambers High Net Worth';
+          }
+          ?>
+          <!-- attorney card -->
+          <article class="attorney-card">
+            <div class="attorney-card__photo<?php echo $headshot ? '' : ' placeholder'; ?>">
+              <?php if ( $headshot ) : ?>
+                <img src="<?php echo esc_url( $headshot['url'] ); ?>" alt="<?php echo esc_attr( $headshot['alt'] ?: get_the_title() ); ?>">
+              <?php else : ?>
+                <span class="placeholder__label">headshot</span>
+              <?php endif; ?>
             </div>
-            <a class="btn btn--primary btn--sm" href="attorney-profile.html">View Profile</a>
-          </div>
-        </article>
-
-        <article class="attorney-card">
-          <div class="attorney-card__photo placeholder"><span class="placeholder__label">headshot</span></div>
-          <div class="attorney-card__body">
-            <div class="attorney-card__name">James Okafor</div>
-            <div class="attorney-card__firm">Okafor &amp; Hill</div>
-            <div class="attorney-card__city">Edison, NJ</div>
-            <div class="attorney-card__creds">
-              <div class="attorney-card__cred"><svg class="star" width="14" height="14" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>Certified Matrimonial Attorney</div>
-              <div class="attorney-card__cred"><svg class="star" width="14" height="14" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>Super Lawyers</div>
+            <div class="attorney-card__body">
+              <div class="attorney-card__name"><?php the_title(); ?></div>
+              <?php if ( $firm ) : ?>
+                <div class="attorney-card__firm"><?php echo esc_html( get_the_title( $firm->ID ) ); ?></div>
+              <?php endif; ?>
+              <?php if ( $city ) : ?>
+                <div class="attorney-card__city"><?php echo esc_html( $city . ( $state ? ', ' . $state : '' ) ); ?></div>
+              <?php endif; ?>
+              <?php if ( $creds ) : ?>
+                <div class="attorney-card__creds">
+                  <?php foreach ( $creds as $cred ) : ?>
+                    <div class="attorney-card__cred"><svg class="star" width="14" height="14" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg><?php echo esc_html( $cred ); ?></div>
+                  <?php endforeach; ?>
+                </div>
+              <?php endif; ?>
+              <a class="btn btn--primary btn--sm" href="<?php the_permalink(); ?>">View Profile</a>
             </div>
-            <a class="btn btn--primary btn--sm" href="attorney-profile.html">View Profile</a>
-          </div>
-        </article>
+          </article>
+        <?php endwhile; wp_reset_postdata(); ?>
       </div>
     </section>
 
@@ -144,7 +159,7 @@
         <div class="cta-band__title">Ready to talk to someone who can help?</div>
         <p class="cta-band__body">Browse the full roster of certified New Jersey divorce attorneys and reach out directly &mdash; no middleman, no referral fees.</p>
       </div>
-      <a class="btn btn--onDark" href="directory.html">Find an Attorney</a>
+      <a class="btn btn--onDark" href="/divorce-attorneys/">Find an Attorney</a>
     </section>
 
     <?php get_footer(); ?>

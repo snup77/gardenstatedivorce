@@ -7,10 +7,15 @@
         <span class="brand__name"><?php bloginfo( 'name' ); ?></span>
       </span>
       <nav class="site-footer__links">
-        <a href="#">About</a>
-        <a href="#">For attorneys</a>
-        <a href="#">Privacy</a>
-        <a href="talk-to-us.html">Contact</a>
+        <?php
+        wp_nav_menu( [
+          'theme_location' => 'primary',
+          'container'      => false,
+          'items_wrap'     => '%3$s',
+          'walker'         => new GSD_Nav_Walker( '' ),
+          'fallback_cb'    => false,
+        ] );
+        ?>
       </nav>
       <div class="site-footer__copy">&copy; <?php echo esc_html( date_i18n( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?></div>
     </footer>

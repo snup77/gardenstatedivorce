@@ -19,8 +19,15 @@
         <span class="brand__name"><?php bloginfo( 'name' ); ?></span>
       </a>
       <nav class="site-menu">
-        <a class="nav-link" href="talk-to-us.html">Talk to us</a>
-        <a class="nav-cta" href="directory.html">Find an Attorney</a>
+        <?php
+        wp_nav_menu( [
+          'theme_location' => 'primary',
+          'container'      => false,
+          'items_wrap'     => '%3$s',
+          'walker'         => new GSD_Nav_Walker( 'nav-link', 'nav-cta' ),
+          'fallback_cb'    => false,
+        ] );
+        ?>
       </nav>
       <button class="nav-toggle" type="button" data-menu-toggle aria-label="Toggle menu">
         <svg class="icon-open" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M3 12h18"></path><path d="M3 18h18"></path></svg>
