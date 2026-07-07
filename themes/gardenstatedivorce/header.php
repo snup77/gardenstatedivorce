@@ -14,10 +14,14 @@
 
     <!-- ============================== header ============================== -->
     <header class="site-header">
-      <a class="brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-        <span class="brand__mark">G</span>
-        <span class="brand__name"><?php bloginfo( 'name' ); ?></span>
-      </a>
+      <?php if ( has_custom_logo() ) : ?>
+        <?php the_custom_logo(); ?>
+      <?php else : ?>
+        <a class="brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <span class="brand__mark">G</span>
+          <span class="brand__name"><?php bloginfo( 'name' ); ?></span>
+        </a>
+      <?php endif; ?>
       <nav class="site-menu">
         <?php
         wp_nav_menu( [

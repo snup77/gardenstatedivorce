@@ -96,61 +96,49 @@ $degree_labels = [
           <?php if ( $nj_cert ) : ?>
             <div class="recognition">
               <svg class="star" width="15" height="15" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>
-              <div class="recognition__body">
-                <div class="recognition__label">NJ Supreme Court Certified Matrimonial Attorney</div>
-                <div class="recognition__detail">Fewer than 160 statewide</div>
-              </div>
+              <div class="recognition__label">NJ Supreme Court Certified Matrimonial Attorney</div>
+              <div class="recognition__detail">Fewer than 160 statewide</div>
             </div>
           <?php endif; ?>
           <?php if ( $aaml ) : ?>
             <div class="recognition">
               <svg class="star" width="15" height="15" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>
-              <div class="recognition__body">
-                <div class="recognition__label">Fellow, American Academy of Matrimonial Lawyers</div>
-                <div class="recognition__detail">~45 in New Jersey</div>
-              </div>
+              <div class="recognition__label">Fellow, American Academy of Matrimonial Lawyers</div>
+              <div class="recognition__detail">~45 in New Jersey</div>
             </div>
           <?php endif; ?>
           <?php if ( ! empty( $super_lawyers['listed'] ) ) : ?>
             <div class="recognition">
               <svg class="star" width="15" height="15" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>
-              <div class="recognition__body">
-                <div class="recognition__label">Super Lawyers</div>
-                <?php if ( ! empty( $super_lawyers['years'] ) ) : ?>
-                  <div class="recognition__detail"><?php echo esc_html( str_replace( '-', '–', $super_lawyers['years'] ) ); ?></div>
-                <?php endif; ?>
-              </div>
+              <div class="recognition__label">Super Lawyers</div>
+              <?php if ( ! empty( $super_lawyers['years'] ) ) : ?>
+                <div class="recognition__detail"><?php echo esc_html( str_replace( '-', '–', $super_lawyers['years'] ) ); ?></div>
+              <?php endif; ?>
             </div>
           <?php endif; ?>
           <?php if ( ! empty( $best_lawyers['listed'] ) ) : ?>
             <div class="recognition">
               <svg class="star" width="15" height="15" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>
-              <div class="recognition__body">
-                <div class="recognition__label">Best Lawyers in America</div>
-                <?php if ( ! empty( $best_lawyers['start_year'] ) ) : ?>
-                  <div class="recognition__detail">Since <?php echo esc_html( $best_lawyers['start_year'] ); ?></div>
-                <?php endif; ?>
-              </div>
+              <div class="recognition__label">Best Lawyers in America</div>
+              <?php if ( ! empty( $best_lawyers['start_year'] ) ) : ?>
+                <div class="recognition__detail">Since <?php echo esc_html( $best_lawyers['start_year'] ); ?></div>
+              <?php endif; ?>
             </div>
           <?php endif; ?>
           <?php if ( $av_preeminent ) : ?>
             <div class="recognition">
               <svg class="star" width="15" height="15" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>
-              <div class="recognition__body">
-                <div class="recognition__label">AV Preeminent</div>
-                <div class="recognition__detail">Martindale-Hubbell</div>
-              </div>
+              <div class="recognition__label">AV Preeminent</div>
+              <div class="recognition__detail">Martindale-Hubbell</div>
             </div>
           <?php endif; ?>
           <?php if ( ! empty( $chambers['listed'] ) ) : ?>
             <div class="recognition">
               <svg class="star" width="15" height="15" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>
-              <div class="recognition__body">
-                <div class="recognition__label">Chambers High Net Worth</div>
-                <?php if ( ! empty( $chambers['tier'] ) ) : ?>
-                  <div class="recognition__detail"><?php echo esc_html( $chambers['tier'] ); ?></div>
-                <?php endif; ?>
-              </div>
+              <div class="recognition__label">Chambers High Net Worth</div>
+              <?php if ( ! empty( $chambers['tier'] ) ) : ?>
+                <div class="recognition__detail"><?php echo esc_html( $chambers['tier'] ); ?></div>
+              <?php endif; ?>
             </div>
           <?php endif; ?>
         </div>
@@ -253,7 +241,7 @@ $degree_labels = [
                     <div class="rating__row">
                       <svg class="star" width="15" height="15" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>
                       <span class="rating__score"><?php echo esc_html( $avvo['stars'] ); ?></span>
-                      <span class="rating__meta">Avvo &middot; <?php echo esc_html( $avvo['review_number'] ); ?> review<?php echo 1 == $avvo['review_number'] ? '' : 's'; ?> &middot; rating <?php echo esc_html( $avvo['rating'] ); ?><span class="frac">/10</span></span>
+                      <span class="rating__meta">Avvo &middot; <?php echo esc_html( $avvo['review_number'] ); ?> review<?php echo 1 == $avvo['review_number'] ? '' : 's'; ?> &middot; Rating: <?php echo esc_html( number_format( (float) $avvo['rating'], 1 ) ); ?></span>
                     </div>
                     <div class="rating__kind">Attorney rating</div>
                   </div>

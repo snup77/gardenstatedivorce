@@ -58,6 +58,10 @@ Version: 1.0
   --radius-md: 17.5px;
   --radius-sm: 12.5px;
 
+  /* Site logo (Customize > Site Identity), used in header.php/footer.php.
+     Change this one value to resize the logo everywhere it appears. */
+  --logo-max-height: 47.25px;
+
   /* content caps at --content-max and centers; band backgrounds stay full-width.
      --pad-x resolves to the larger of the min gutter or the leftover half-margin. */
   --content-max: 1600px;
@@ -148,11 +152,13 @@ img { max-width: 100%; display: block; }
 /* gold star (inline svg gets this class) */
 .star { fill: var(--gold); flex-shrink: 0; }
 
-/* recognition line-item (star + label [+ detail]) */
-.recognition { display: flex; align-items: flex-start; gap: 12.5px; }
-.recognition__body { min-width: 0; }
-.recognition__label { font-size: 17.5px; font-weight: 600; color: var(--ink); line-height: 1.3; }
-.recognition__detail { font-size: 15.625px; color: var(--muted-2); line-height: 1.45; margin-top: 2.5px; }
+/* recognition line-item (star + label [+ detail]). Grid, not flex: the star
+   only spans the label's row (grid-row:1, centered within just that row),
+   while the detail line sits in row 2 below it, indented under the label. */
+.recognition { display: grid; grid-template-columns: auto 1fr; column-gap: 12.5px; }
+.recognition > .star { grid-row: 1; align-self: center; }
+.recognition__label { grid-column: 2; font-size: 17.5px; font-weight: 600; color: var(--ink); line-height: 1.3; }
+.recognition__detail { grid-column: 2; font-size: 15.625px; color: var(--muted-2); line-height: 1.45; margin-top: 2.5px; }
 
 /* eyebrow / kicker */
 .kicker {
@@ -176,6 +182,10 @@ img { max-width: 100%; display: block; }
 .brand__name { font-family: var(--serif); font-size: 22.5px; font-weight: 600; color: var(--ink-strong); }
 .brand--sm .brand__mark { width: 32.5px; height: 32.5px; border-radius: 10px; font-size: 16.25px; }
 .brand--sm .brand__name { font-size: 18.75px; }
+
+/* uploaded Site Identity logo (falls back to .brand above if none is set) */
+.custom-logo-link { display: flex; align-items: center; }
+.custom-logo { max-height: var(--logo-max-height); width: auto; }
 
 /* image placeholder (striped) */
 .placeholder {
@@ -396,7 +406,7 @@ img { max-width: 100%; display: block; }
 
 .email-cta-wrap { padding: 45px var(--pad-x) 10px; display: flex; justify-content: center; }
 .email-cta { background: var(--panel); border: 1.25px solid #e2ebe4; border-radius: var(--radius-md); padding: 40px 50px; text-align: center; max-width: 700px; width: 100%; }
-.email-cta__label { font-size: 15.625px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted-2); }
+.email-cta__label { font-size: 15.625px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted-2); margin-bottom: 12px; }
 .email-cta__address { font-family: var(--serif); font-size: 32.5px; font-weight: 600; color: var(--green); margin-top: 15px; word-break: break-word; text-decoration: none; }
 .email-cta .btn { margin-top: 27.5px; }
 
@@ -416,20 +426,21 @@ img { max-width: 100%; display: block; }
   .attorney-row__creds { grid-template-columns: 1fr; }
   .profile-body { grid-template-columns: 1fr; }
   .profile-hero__recognitions { grid-template-columns: 1fr; }
-}
 
-/* Phone: edge-to-edge-ish shell, hamburger nav, single columns */
-@media (max-width: 640px) {
-  :root { --gutter: 22.5px; }
+  /* stack + center the footer on tablet and phone */
+  .site-footer { flex-direction: column; text-align: center; }
+  .site-footer__links { justify-content: center; flex-wrap: wrap; }
 
-  .site-header { padding: 17.5px 22.5px; }
-
-  /* burger shows; the single .site-menu becomes a full-screen overlay */
+  /* burger shows on tablet and phone; the single .site-menu becomes a full-screen overlay */
   .nav-toggle { display: inline-flex; }
   .site-menu { display: none; }
 
   body.menu-open { overflow: hidden; }
   body.menu-open .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 1001; }
+  /* .site-menu is a sibling of .nav-toggle inside .site-header, so its
+     full-screen z-index:1000 overlay would otherwise paint over the
+     toggle button (which has no z-index of its own) and hide it. */
+  body.menu-open .nav-toggle { position: relative; z-index: 1001; }
   body.menu-open .nav-toggle .icon-open { display: none; }
   body.menu-open .nav-toggle .icon-close { display: inline-flex; }
   body.menu-open .site-menu {
@@ -444,7 +455,14 @@ img { max-width: 100%; display: block; }
   }
   body.menu-open .nav-link { color: var(--ink); border-bottom: 1.25px solid var(--border-3); }
   body.menu-open .nav-link.is-active { color: var(--green); }
-  body.menu-open .nav-cta { background: none; color: var(--green); border-radius: 0; }
+  body.menu-open .nav-cta { background: none; color: var(--ink); border-radius: 0; }
+}
+
+/* Phone: edge-to-edge-ish shell, single columns */
+@media (max-width: 640px) {
+  :root { --gutter: 22.5px; }
+
+  .site-header { padding: 17.5px 22.5px; }
 
   .hero__title { font-size: 38.75px; }
   .section { padding: 55px 22.5px; }

@@ -20,31 +20,23 @@
         <div class="trust-panel__list">
           <div class="recognition">
             <svg class="star" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>
-            <div class="recognition__body">
-              <div class="recognition__label">Certified Matrimonial Attorney</div>
-              <div class="recognition__detail">A NJ Supreme Court certification held by a small fraction of the bar.</div>
-            </div>
+            <div class="recognition__label">Certified Matrimonial Attorney</div>
+            <div class="recognition__detail">A NJ Supreme Court certification held by a small fraction of the bar.</div>
           </div>
           <div class="recognition">
             <svg class="star" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>
-            <div class="recognition__body">
-              <div class="recognition__label">Super Lawyers</div>
-              <div class="recognition__detail">Peer-nominated recognition for the top attorneys in family law.</div>
-            </div>
+            <div class="recognition__label">Super Lawyers</div>
+            <div class="recognition__detail">Peer-nominated recognition for the top attorneys in family law.</div>
           </div>
           <div class="recognition">
             <svg class="star" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>
-            <div class="recognition__body">
-              <div class="recognition__label">AV Preeminent</div>
-              <div class="recognition__detail">Martindale-Hubbell's highest rating for ability and ethics.</div>
-            </div>
+            <div class="recognition__label">AV Preeminent</div>
+            <div class="recognition__detail">Martindale-Hubbell's highest rating for ability and ethics.</div>
           </div>
           <div class="recognition">
             <svg class="star" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>
-            <div class="recognition__body">
-              <div class="recognition__label">Chambers High Net Worth</div>
-              <div class="recognition__detail">Independent ranking for complex, high-asset divorces.</div>
-            </div>
+            <div class="recognition__label">Chambers High Net Worth</div>
+            <div class="recognition__detail">Independent ranking for complex, high-asset divorces.</div>
           </div>
         </div>
       </aside>

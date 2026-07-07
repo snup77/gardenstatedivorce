@@ -2,10 +2,14 @@
 
     <!-- ============================== footer ============================== -->
     <footer class="site-footer">
-      <span class="brand brand--sm">
-        <span class="brand__mark">G</span>
-        <span class="brand__name"><?php bloginfo( 'name' ); ?></span>
-      </span>
+      <?php if ( has_custom_logo() ) : ?>
+        <?php the_custom_logo(); ?>
+      <?php else : ?>
+        <span class="brand brand--sm">
+          <span class="brand__mark">G</span>
+          <span class="brand__name"><?php bloginfo( 'name' ); ?></span>
+        </span>
+      <?php endif; ?>
       <nav class="site-footer__links">
         <?php
         wp_nav_menu( [
