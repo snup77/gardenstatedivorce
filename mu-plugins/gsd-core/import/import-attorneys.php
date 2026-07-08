@@ -320,6 +320,14 @@ class GSD_Import_Command {
 
 		if ( $existing ) {
 			$term_id = (int) $existing['term_id'];
+
+			// Keep the parent in sync if the spreadsheet's county for this
+			// city changed since the term was first created.
+			$term = get_term( $term_id, 'attorney_location' );
+
+			if ( $term && (int) $term->parent !== $parent_id ) {
+				wp_update_term( $term_id, 'attorney_location', [ 'parent' => $parent_id ] );
+			}
 		} else {
 			$term = wp_insert_term( $this->slug_to_name( $slug ), 'attorney_location', [
 				'slug'   => $slug,

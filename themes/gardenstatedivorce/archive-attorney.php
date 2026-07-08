@@ -84,11 +84,21 @@
     <?php endif; ?>
 
     <!-- ============================ pagination ============================ -->
-    <nav class="pagination">
-      <span class="is-current">1</span>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#" aria-label="Next">&rarr;</a>
-    </nav>
+    <?php
+    $pagination_links = paginate_links( [
+      'total'     => $wp_query->max_num_pages,
+      'current'   => max( 1, get_query_var( 'paged' ) ),
+      'prev_text' => '&larr;',
+      'next_text' => '&rarr;',
+      'type'      => 'array',
+    ] );
+    ?>
+    <?php if ( $pagination_links ) : ?>
+      <nav class="pagination">
+        <?php foreach ( $pagination_links as $link ) : ?>
+          <?php echo str_replace( 'page-numbers current', 'page-numbers is-current', $link ); ?>
+        <?php endforeach; ?>
+      </nav>
+    <?php endif; ?>
 
 <?php get_footer(); ?>

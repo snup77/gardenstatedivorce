@@ -76,6 +76,13 @@ class GSD_Nav_Walker extends Walker_Nav_Menu {
 	public function end_el( &$output, $item, $depth = 0, $args = null ) {}
 }
 
+// Show 25 attorneys per page on the archive, independent of Settings > Reading.
+add_action( 'pre_get_posts', function ( $query ) {
+	if ( ! is_admin() && $query->is_main_query() && is_post_type_archive( 'attorney' ) ) {
+		$query->set( 'posts_per_page', 25 );
+	}
+} );
+
 // Disable the block editor for all post types.
 add_filter( 'use_block_editor_for_post', '__return_false', 100 );
 
