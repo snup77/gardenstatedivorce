@@ -184,7 +184,7 @@
       "aaml_fellowship": true,
       "av_preeminent": true,
       "super_lawyers": true,
-      "super_lawyers_years": "2005-2013, 2026",
+      "super_lawyers_years": "2005-2026",
       "super_lawyers_url": "https://profiles.superlawyers.com/new-jersey/hackensack/lawyer/charles-c-abut/6c8f2b4f-5f3d-41f8-acee-ea48f933d711.html",
       "best_lawyers": true,
       "best_lawyers_start_year": 2001,
@@ -305,6 +305,176 @@
       "date_last_verified": "2026-07-07",
       "biography": "Mary Ann Bauer is a founding partner of Bauer & Karch Law Group, LLC in Lebanon, where she has practiced family law since graduating from Seton Hall University School of Law in 1988. She is a certified matrimonial attorney and a Fellow of the American Academy of Matrimonial Lawyers, and she is also a trained collaborative law attorney, mediator, and certified arbitrator, giving clients multiple paths to resolve disputes outside of traditional litigation. Her practice covers divorce, custody and parenting time, alimony, child support, and domestic violence matters throughout Hunterdon County and the surrounding area.\n\nMs. Bauer has been selected to the Super Lawyers list every year since 2015 and has been repeatedly named to the Top 50 Women New Jersey Super Lawyers list. In 2014, she received the Hunterdon County Bar Association's Professional Lawyer of the Year Award. She also serves the family court system as an appointed parenting coordinator and mediator. Ms. Bauer earned her Bachelor of Science with honors from Rutgers University and her Juris Doctor, cum laude, from Seton Hall University School of Law.",
       "meta_description": "Mary Ann Bauer is a Certified Matrimonial Attorney and AAML Fellow providing divorce and mediation services in Hunterdon County, NJ."
+    },
+    {
+      "attorney_id": 10,
+      "first_name": "Bruce",
+      "last_name": "Chase",
+      "email_address": "bchase@chaseandchase.com",
+      "phone_number": "(201) 343-6555",
+      "headshot_url": "https://www.chaseandchase.com/wp-content/uploads/2020/07/IMG-3679-1152x1536.jpeg",
+      "license_year": 1978,
+      "firm_id": 10,
+      "primary_office_id": 17,
+      "nj_matrimonial_cert": true,
+      "aaml_fellowship": true,
+      "av_preeminent": false,
+      "super_lawyers": true,
+      "super_lawyers_years": "2007-2025",
+      "super_lawyers_url": "https://profiles.superlawyers.com/new-jersey/hackensack/lawyer/bruce-evan-chase/33761382-7956-4e7f-9812-6f44aa7cf847.html",
+      "best_lawyers": false,
+      "best_lawyers_start_year": null,
+      "best_lawyers_url": null,
+      "chambers": false,
+      "chambers_tier": null,
+      "chambers_url": null,
+      "avvo_url": "https://www.avvo.com/attorneys/07601-nj-bruce-chase-1598301.html",
+      "avvo_rating": 10.0,
+      "avvo_review_number": 0,
+      "avv_stars": 0.0,
+      "findlaw_url": "https://lawyers.findlaw.com/new-jersey/hackensack/1100050_1/",
+      "martindale_url": "https://www.martindale.com/attorney/bruce-e-chase-1091508/",
+      "justia_url": "https://lawyers.justia.com/lawyer/bruce-evan-chase-1499731",
+      "website_url": "https://www.chaseandchase.com",
+      "date_last_verified": "2026-07-08",
+      "biography": "Bruce Chase is the founder of Chase & Chase LLC in Hackensack, where he has practiced family law since 1978, following his admission to the New Jersey Bar to join his father's existing firm. He handles the full range of contested divorce matters, including child custody, shared residential custody, equitable distribution of businesses, alimony, and child support, and his background in real estate, business, and commercial leasing informs his approach to complex asset division. He is a Certified Matrimonial Law Attorney under the Supreme Court of New Jersey and a Fellow of the American Academy of Matrimonial Lawyers, where he currently serves as First Vice President of the New Jersey Chapter.\n\nChase has been selected to the Super Lawyers list every year since 2007 and serves as chairperson of an early settlement panel that helps resolve contested divorce cases before trial. He is a past president of the Bergen County Bar Association and has co-chaired its Family Law Committee for more than a decade, in addition to serving on the New Jersey State Bar Association's Family Law Section Executive Committee since 1998. A frequent lecturer for the State Bar's continuing education programs, he has authored articles for the Bergen Barrister and the New Jersey Family Lawyer. Chase earned his Juris Doctor from Rutgers University School of Law in 1978 and his Bachelor of Arts, magna cum laude, from American University in 1975.",
+      "meta_description": "Bruce Chase, NJ Certified Matrimonial Attorney and AAML Fellow, has handled contested divorce and custody cases in Bergen County since 1978."
+    },
+    {
+      "attorney_id": 11,
+      "first_name": "Cary",
+      "last_name": "Cheifetz",
+      "email_address": "ccheifetz@aystrauss.com",
+      "phone_number": "(973) 287-0966",
+      "headshot_url": "https://www.aystrauss.com/wp-content/uploads/2025/06/Cary-Cheifetz-325-x-360.png",
+      "license_year": 1980,
+      "firm_id": 11,
+      "primary_office_id": 18,
+      "nj_matrimonial_cert": true,
+      "aaml_fellowship": true,
+      "av_preeminent": true,
+      "super_lawyers": true,
+      "super_lawyers_years": "2005-2026",
+      "super_lawyers_url": "https://profiles.superlawyers.com/new-jersey/livingston/lawyer/cary-b-cheifetz/587540f7-2931-4643-ac1f-a05499ab8700.html",
+      "best_lawyers": true,
+      "best_lawyers_start_year": 2007,
+      "best_lawyers_url": "https://www.bestlawyers.com/lawyers/cary-b-cheifetz/59653",
+      "chambers": true,
+      "chambers_tier": "Band 1",
+      "chambers_url": "https://chambers.com/lawyer/cary-cheifetz-high-net-worth-21:26573065",
+      "avvo_url": "https://www.avvo.com/attorneys/07901-nj-cary-cheifetz-1575123.html",
+      "avvo_rating": 10.0,
+      "avvo_review_number": 2,
+      "avv_stars": 5.0,
+      "findlaw_url": null,
+      "martindale_url": "https://www.martindale.com/attorney/cary-b-cheifetz-1098291/",
+      "justia_url": "https://lawyers.justia.com/lawyer/cary-cheifetz-954064",
+      "website_url": "https://www.aystrauss.com",
+      "date_last_verified": "2026-07-08",
+      "biography": "Cary B. Cheifetz is Of Counsel in the Family Law Practice Group at A.Y. Strauss in Livingston, where his practice focuses on complex divorce and custody matters, high-net-worth marital dissolutions, and family law issues involving bankruptcy, professional malpractice, and jurisdictional challenges. He is frequently retained nationally as an expert witness, mediator, and arbitrator, and is ranked Band 1 by Chambers and Partners for High-Net-Worth Family/Matrimonial law in New Jersey. He is a Fellow of the American Academy of Matrimonial Lawyers and a Diplomate of the American College of Family Trial Lawyers.\n\nCheifetz has been selected to the Super Lawyers list since 2005 and has been named to The Best Lawyers in America for Family Law since 2007. A past president of both the Essex County Bar Association and the New Jersey Chapter of the American Academy of Matrimonial Lawyers, he has also chaired the Family Law Executive Committees of the Essex County and New Jersey State Bar Associations. He is co-author of New Jersey Family Law (2nd Edition, LexisNexis) and has served on the faculty of the New Jersey Judicial College and the New Jersey Family Part Judges Retreat. Cheifetz earned his Juris Doctor from New York Law School and his Bachelor of Arts from George Washington University.",
+      "meta_description": "Cary Cheifetz, a Chambers Band 1 and AAML Fellow attorney in Livingston, handles high-net-worth divorce cases throughout Essex County, NJ."
+    },
+    {
+      "attorney_id": 12,
+      "first_name": "Alix",
+      "last_name": "Claps",
+      "email_address": "aclaps@hflawfirm.com",
+      "phone_number": "973-895-4400",
+      "headshot_url": "https://heymannfletcherlaw.com/wp-content/uploads/alix-claps.webp",
+      "license_year": 2014,
+      "firm_id": 12,
+      "primary_office_id": 20,
+      "nj_matrimonial_cert": true,
+      "aaml_fellowship": true,
+      "av_preeminent": false,
+      "super_lawyers": true,
+      "super_lawyers_years": "2026",
+      "super_lawyers_url": "https://profiles.superlawyers.com/new-jersey/randolph/lawyer/alix-claps/36603c65-c81a-439d-ba06-743550d1b277.html",
+      "best_lawyers": false,
+      "best_lawyers_start_year": null,
+      "best_lawyers_url": null,
+      "chambers": false,
+      "chambers_tier": null,
+      "chambers_url": null,
+      "avvo_url": "https://www.avvo.com/attorneys/07869-nj-alix-claps-4968801.html",
+      "avvo_rating": 9.9,
+      "avvo_review_number": 3,
+      "avv_stars": 5.0,
+      "findlaw_url": "https://lawyers.findlaw.com/new-jersey/randolph/5045658_1/",
+      "martindale_url": "https://www.martindale.com/attorney/alix-claps-300825242/",
+      "justia_url": null,
+      "website_url": "https://heymannfletcherlaw.com",
+      "date_last_verified": "2026-07-08",
+      "biography": "Alix Claps is a Partner at Heymann & Fletcher in Randolph, where she concentrates her practice on family law, including divorce, custody, and parenting time disputes. A native of Randolph, she clerked for the Honorable Edith K. Payne and the Honorable Christine A. Farrington in the Civil Division of Essex County Superior Court before joining the firm, and she is a Fellow of the American Academy of Matrimonial Lawyers. She also represents victims of domestic violence pro bono through the Jersey Battered Women's Legal Advocacy Project.\n\nClaps was named a New Jersey Rising Star by Super Lawyers from 2019 through 2023 and was selected to the Super Lawyers list in 2026. She is an active member of the New Jersey State Bar Association's Family Law Executive Committee, where she previously co-chaired the Family Law Section's Young Lawyers Subcommittee, and belongs to the Barry I. Croland Family Law American Inn of Court and the Morris County Bar Association. Before pursuing law, Claps worked professionally as a stage manager; she earned her Juris Doctor, cum laude, from Rutgers Law School in Newark, her Bachelor of Theatre Arts from the University of Michigan, and her Master of Arts from DePaul University.",
+      "meta_description": "Alix Claps, an AAML Fellow and Partner at Heymann & Fletcher, handles divorce and custody matters throughout Morris County, New Jersey."
+    },
+    {
+      "attorney_id": 13,
+      "first_name": "Amy Sara",
+      "last_name": "Cores",
+      "email_address": "amy@madjammusiclaw.com",
+      "phone_number": "(732) 414-6669",
+      "headshot_url": "https://cdn.sanity.io/images/ghwi0tny/production/5c1600489e807826fb09d95fae229dad9697e892-2456x1640.png",
+      "license_year": 2003,
+      "firm_id": 13,
+      "primary_office_id": 21,
+      "nj_matrimonial_cert": true,
+      "aaml_fellowship": true,
+      "av_preeminent": false,
+      "super_lawyers": true,
+      "super_lawyers_years": "2014-2026",
+      "super_lawyers_url": "https://profiles.superlawyers.com/new-jersey/califon/lawyer/amy-sara-cores/4da9eb10-7abd-45c2-a779-f83977079841.html",
+      "best_lawyers": false,
+      "best_lawyers_start_year": null,
+      "best_lawyers_url": null,
+      "chambers": false,
+      "chambers_tier": null,
+      "chambers_url": null,
+      "avvo_url": "https://www.avvo.com/attorneys/07731-nj-amy-cores-1607431.html",
+      "avvo_rating": 10.0,
+      "avvo_review_number": 22,
+      "avv_stars": 4.3,
+      "findlaw_url": "https://lawyers.findlaw.com/new-jersey/howell/4166341_1/",
+      "martindale_url": null,
+      "justia_url": "https://lawyers.justia.com/lawyer/amy-sara-cores-1043322",
+      "website_url": "https://www.madjammusiclaw.com",
+      "date_last_verified": "2026-07-08",
+      "biography": "Amy Sara Cores is the founder of MadJam Music & Entertainment Law, LLC in Howell, where she handles family law matters alongside her entertainment law practice. Certified by the Supreme Court of New Jersey as a Matrimonial Law Attorney and a Fellow of the American Academy of Matrimonial Lawyers, she is an experienced appellate attorney and has represented clients in cases before both the New Jersey Supreme Court and the Supreme Court of the United States. She is also recognized as a national expert on international child abduction, having worked with the U.S. State Department and the National Center for Missing and Exploited Children to secure the return of abducted children.\n\nCores has been selected to the Super Lawyers list since 2014, following selection to the Rising Stars list from 2008 through 2013, and received the New Jersey State Bar Association's Young Lawyer of the Year Award in 2009. She serves on the Amicus Committee of both the American Academy of Matrimonial Lawyers and its New Jersey Chapter, and is a member of the New Jersey State Bar Association, the Monmouth Bar Association, and the American Bar Association. Cores earned her Juris Doctor from Rutgers University School of Law in Camden and holds two graduate degrees, including a Master of Arts from Florida State University and a Master of Arts from the Berklee College of Music.",
+      "meta_description": "Amy Sara Cores, a Certified Matrimonial Attorney and AAML Fellow in Howell, handles family law and international custody cases in Monmouth County."
+    },
+    {
+      "attorney_id": 14,
+      "first_name": "Carolyn",
+      "last_name": "Daly",
+      "email_address": "cdaly@cohenseglias.com",
+      "phone_number": "973-474-5003",
+      "headshot_url": "https://wpcdn.us-midwest-1.vip.tn-cloud.net/www.healthandlifemags.com/content/uploads/2021/07/p/y/carolyn-daly.jpg",
+      "license_year": 1996,
+      "firm_id": 14,
+      "primary_office_id": 22,
+      "nj_matrimonial_cert": true,
+      "aaml_fellowship": true,
+      "av_preeminent": false,
+      "super_lawyers": true,
+      "super_lawyers_years": "2013-2026",
+      "super_lawyers_url": "https://profiles.superlawyers.com/new-jersey/newark/lawyer/carolyn-n-daly/4ab6e8ed-9998-4880-8f81-6690fbd696dc.html",
+      "best_lawyers": true,
+      "best_lawyers_start_year": 2025,
+      "best_lawyers_url": "https://www.bestlawyers.com/lawyers/carolyn-n-daly/159568",
+      "chambers": false,
+      "chambers_tier": null,
+      "chambers_url": null,
+      "avvo_url": "https://www.avvo.com/attorneys/07102-nj-carolyn-daly-1615365.html",
+      "avvo_rating": 10.0,
+      "avvo_review_number": 130,
+      "avv_stars": 5.0,
+      "findlaw_url": "https://lawyers.findlaw.com/new-jersey/morristown/4126346_1/",
+      "martindale_url": "https://www.martindale.com/attorney/carolyn-nicole-daly-1104486/",
+      "justia_url": "https://lawyers.justia.com/lawyer/carolyn-nicole-daly-1251438",
+      "website_url": "https://www.cohenseglias.com",
+      "date_last_verified": "2026-07-08",
+      "biography": "Carolyn N. Daly chairs the Family Law Group at Cohen Seglias Pallas Greenhall & Furman PC in Newark, where she is certified by the Supreme Court of New Jersey as a Matrimonial Law Attorney. Her practice spans divorce litigation, mediation, and arbitration, with particular emphasis on complex financial matters such as restricted stock units, deferred compensation, cryptocurrency, and closely held business interests, and family court judges regularly appoint her as a mediator, guardian ad litem, and parent coordinator. She is a Fellow of the American Academy of Matrimonial Lawyers and a past president of its New Jersey Chapter.\n\nDaly has been named to The Best Lawyers in America for Family Law, Family Law Arbitration, and Family Law Mediation since 2025, and has been selected to the Super Lawyers list every year since 2013, including repeated recognition on the Top 50 Women and Top 100 New Jersey lawyer lists. She argued before the Supreme Court of New Jersey in Cardali v. Cardali on behalf of AAML-NJ as amicus curiae, and serves on the New Jersey Courts' Supreme Court Family Practice Committee and the New Jersey State Bar Association's Family Law Executive Committee. Daly earned her Juris Doctor from Seton Hall University School of Law in 1996 and her Bachelor of Arts from the University of Notre Dame.",
+      "meta_description": "Carolyn Daly chairs the Family Law Group at Cohen Seglias, handling complex divorce and mediation matters in Newark and Essex County, NJ."
     }
   ],
   "attorney_locations": [
@@ -357,6 +527,36 @@
       "attorney_id": 9,
       "county_slug": "hunterdon",
       "city_slug": "lebanon"
+    },
+    {
+      "attorney_id": 10,
+      "county_slug": "bergen",
+      "city_slug": "hackensack"
+    },
+    {
+      "attorney_id": 11,
+      "county_slug": "essex",
+      "city_slug": "livingston"
+    },
+    {
+      "attorney_id": 11,
+      "county_slug": "bergen",
+      "city_slug": "hackensack"
+    },
+    {
+      "attorney_id": 12,
+      "county_slug": "morris",
+      "city_slug": "randolph"
+    },
+    {
+      "attorney_id": 13,
+      "county_slug": "monmouth",
+      "city_slug": "howell"
+    },
+    {
+      "attorney_id": 14,
+      "county_slug": "essex",
+      "city_slug": "newark"
     }
   ],
   "education": [
@@ -458,7 +658,7 @@
     },
     {
       "attorney_id": 8,
-      "school": "The American University",
+      "school": "American University",
       "degree": "BA",
       "graduation_year": 1987
     },
@@ -473,6 +673,84 @@
       "school": "Rutgers University",
       "degree": "BS",
       "graduation_year": 1984
+    },
+    {
+      "attorney_id": 10,
+      "school": "Rutgers University School of Law",
+      "degree": "JD",
+      "graduation_year": 1978
+    },
+    {
+      "attorney_id": 10,
+      "school": "American University",
+      "degree": "BA",
+      "graduation_year": 1975
+    },
+    {
+      "attorney_id": 11,
+      "school": "New York Law School",
+      "degree": "JD",
+      "graduation_year": 1976
+    },
+    {
+      "attorney_id": 11,
+      "school": "George Washington University",
+      "degree": "BA",
+      "graduation_year": 1979
+    },
+    {
+      "attorney_id": 12,
+      "school": "Rutgers University School of Law, Newark",
+      "degree": "JD",
+      "graduation_year": 2014
+    },
+    {
+      "attorney_id": 12,
+      "school": "University of Michigan",
+      "degree": "BA",
+      "graduation_year": null
+    },
+    {
+      "attorney_id": 12,
+      "school": "DePaul University",
+      "degree": "MA",
+      "graduation_year": null
+    },
+    {
+      "attorney_id": 13,
+      "school": "Rutgers University School of Law, Camden",
+      "degree": "JD",
+      "graduation_year": 2003
+    },
+    {
+      "attorney_id": 13,
+      "school": "Florida State University",
+      "degree": "MA",
+      "graduation_year": 2000
+    },
+    {
+      "attorney_id": 13,
+      "school": "Florida State University",
+      "degree": "BA",
+      "graduation_year": 1997
+    },
+    {
+      "attorney_id": 13,
+      "school": "Berklee College of Music",
+      "degree": "MA",
+      "graduation_year": 2022
+    },
+    {
+      "attorney_id": 14,
+      "school": "Seton Hall University School of Law",
+      "degree": "JD",
+      "graduation_year": 1996
+    },
+    {
+      "attorney_id": 14,
+      "school": "University of Notre Dame",
+      "degree": "BA",
+      "graduation_year": 1992
     }
   ],
   "associations": [
@@ -836,7 +1114,7 @@
     {
       "attorney_id": 8,
       "association": "Monmouth County Bar Association",
-      "role": "Trustee; Co-Chair, Family Law Committee",
+      "role": "Trustee; Co-Chair",
       "start_year": null,
       "end_year": null
     },
@@ -849,8 +1127,8 @@
     },
     {
       "attorney_id": 8,
-      "association": "New Jersey State Bar Association",
-      "role": "Member, Family Law Executive Committee",
+      "association": "Family Law Committee of Monmouth County",
+      "role": "Co-Chair",
       "start_year": null,
       "end_year": null
     },
@@ -866,6 +1144,237 @@
       "association": "Hunterdon County Bar Association",
       "role": "Member (2014 Professional Lawyer of the Year)",
       "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 10,
+      "association": "American Academy of Matrimonial Lawyers",
+      "role": "Fellow",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 10,
+      "association": "American Academy of Matrimonial Lawyers, New Jersey Chapter",
+      "role": "President-Elect",
+      "start_year": 2014,
+      "end_year": 2015
+    },
+    {
+      "attorney_id": 10,
+      "association": "Bergen County Bar Association",
+      "role": "President",
+      "start_year": 1997,
+      "end_year": 1998
+    },
+    {
+      "attorney_id": 10,
+      "association": "Bergen County Bar Association, Family Law Committee",
+      "role": "Chair",
+      "start_year": 1991,
+      "end_year": 1992
+    },
+    {
+      "attorney_id": 10,
+      "association": "New Jersey State Bar Association",
+      "role": "Trustee",
+      "start_year": 2000,
+      "end_year": 2006
+    },
+    {
+      "attorney_id": 10,
+      "association": "New Jersey State Bar Association, Family Law Section",
+      "role": "Executive Committee",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 11,
+      "association": "American Academy of Matrimonial Lawyers",
+      "role": "Fellow",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 11,
+      "association": "American College of Family Trial Lawyers",
+      "role": "Diplomate",
+      "start_year": 2012,
+      "end_year": null
+    },
+    {
+      "attorney_id": 11,
+      "association": "New Jersey State Bar Association",
+      "role": "Member",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 11,
+      "association": "New Jersey State Bar Association, Family Law Section",
+      "role": "Past Chair",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 11,
+      "association": "Essex County Bar Association",
+      "role": "Past President",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 11,
+      "association": "Essex County Bar Association, Family Law Executive Committee",
+      "role": "Past Chair",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 11,
+      "association": "American Trial Lawyers Association, New Jersey Chapter, Family Law Section",
+      "role": "Member",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 11,
+      "association": "New Jersey Family Lawyer",
+      "role": "Former Co-Managing Editor",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 12,
+      "association": "American Academy of Matrimonial Lawyers",
+      "role": "Fellow",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 12,
+      "association": "Morris County Bar Association",
+      "role": "Member",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 12,
+      "association": "New Jersey State Bar Association, Family Law Executive Committee",
+      "role": "Member",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 12,
+      "association": "New Jersey State Bar Association, Family Law Section, Young Lawyer's Subcommittee",
+      "role": "Past Co-Chair",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 12,
+      "association": "Barry I. Croland Family Law American Inn of Court",
+      "role": "Member",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 12,
+      "association": "Jersey Battered Women's Legal Advocacy Project",
+      "role": "Pro Bono Volunteer Attorney",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 13,
+      "association": "American Academy of Matrimonial Lawyers, New Jersey Chapter",
+      "role": "Fellow",
+      "start_year": 2011,
+      "end_year": null
+    },
+    {
+      "attorney_id": 13,
+      "association": "American Academy of Matrimonial Lawyers",
+      "role": "Amicus Committee (state and national)",
+      "start_year": 2011,
+      "end_year": null
+    },
+    {
+      "attorney_id": 13,
+      "association": "New Jersey State Bar Association, Family Law Section",
+      "role": "Board Member",
+      "start_year": 2012,
+      "end_year": 2012
+    },
+    {
+      "attorney_id": 13,
+      "association": "New Jersey State Bar Association",
+      "role": "Member",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 13,
+      "association": "Monmouth Bar Association",
+      "role": "Member",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 13,
+      "association": "American Bar Association",
+      "role": "Member",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 13,
+      "association": "Howell Chamber of Commerce",
+      "role": "Member",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 14,
+      "association": "American Academy of Matrimonial Lawyers",
+      "role": "Fellow",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 14,
+      "association": "American Academy of Matrimonial Lawyers New Jersey Chapter",
+      "role": "President",
+      "start_year": 2022,
+      "end_year": 2023
+    },
+    {
+      "attorney_id": 14,
+      "association": "International Academy of Family Lawyers",
+      "role": "Fellow",
+      "start_year": 2024,
+      "end_year": null
+    },
+    {
+      "attorney_id": 14,
+      "association": "New Jersey Courts' Supreme Court Family Practice Committee",
+      "role": "Member",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 14,
+      "association": "New Jersey State Bar Association, Family Law Executive Committee",
+      "role": "Member",
+      "start_year": null,
+      "end_year": null
+    },
+    {
+      "attorney_id": 14,
+      "association": "New Jersey State Bar Association",
+      "role": "Member",
+      "start_year": 1997,
       "end_year": null
     }
   ],
@@ -914,6 +1423,31 @@
       "firm_id": 9,
       "firm_name": "Bauer & Karch Law Group, LLC",
       "website_url": "https://bauerkarchlaw.com"
+    },
+    {
+      "firm_id": 10,
+      "firm_name": "Chase & Chase LLC",
+      "website_url": "https://www.chaseandchase.com"
+    },
+    {
+      "firm_id": 11,
+      "firm_name": "A.Y. Strauss, LLC",
+      "website_url": "https://www.aystrauss.com"
+    },
+    {
+      "firm_id": 12,
+      "firm_name": "Heymann & Fletcher",
+      "website_url": "https://heymannfletcherlaw.com"
+    },
+    {
+      "firm_id": 13,
+      "firm_name": "MadJam Music & Entertainment Law, LLC",
+      "website_url": "https://www.madjammusiclaw.com"
+    },
+    {
+      "firm_id": 14,
+      "firm_name": "Cohen Seglias Pallas Greenhall & Furman PC",
+      "website_url": "https://www.cohenseglias.com"
     }
   ],
   "offices": [
@@ -1124,6 +1658,84 @@
       "gbp_url": "https://www.google.com/maps/place/Bauer+%26+Karch+Law+Group,+LLC/@40.6423615,-74.8418263,683m/data=!3m2!1e3!4b1!4m6!3m5!1s0x89c38d80802d9ecd:0x2313403e2a7a34aa!8m2!3d40.6423615!4d-74.8418263!16s%2Fg%2F11snhg6_2n",
       "gbp_rating": 0.0,
       "gbp_review_number": 0
+    },
+    {
+      "office_id": 17,
+      "firm_id": 10,
+      "street": "1 Atlantic Street",
+      "suite": null,
+      "city": "Hackensack",
+      "state": "NJ",
+      "zip": "07601",
+      "phone": "(201) 343-6555",
+      "gbp_url": "https://www.google.com/maps/place/Chase+%26+Chase/@40.8811264,-74.0440445,680m/data=!3m2!1e3!4b1!4m6!3m5!1s0x89c2f9f7c88b4119:0x21907ad75fbe3de9!8m2!3d40.8811264!4d-74.0440445!16s%2Fg%2F1tzgq49m",
+      "gbp_rating": 3.9,
+      "gbp_review_number": 7
+    },
+    {
+      "office_id": 18,
+      "firm_id": 11,
+      "street": "290 West Mount Pleasant Avenue",
+      "suite": "Suite 3260",
+      "city": "Livingston",
+      "state": "NJ",
+      "zip": "07039",
+      "phone": "(973) 287-0966",
+      "gbp_url": "https://www.google.com/maps/search/A.Y.+Strauss+290+West+Mount+Pleasant+Avenue+Livingston+NJ/@40.7978111,-74.3391352,681m/data=!3m2!1e3!4b1",
+      "gbp_rating": 4.4,
+      "gbp_review_number": 7
+    },
+    {
+      "office_id": 19,
+      "firm_id": 11,
+      "street": "Court Plaza North, 25 Main St",
+      "suite": "6th Floor",
+      "city": "Hackensack",
+      "state": "NJ",
+      "zip": "07601",
+      "phone": "(201) 487-0200",
+      "gbp_url": null,
+      "gbp_rating": 0.0,
+      "gbp_review_number": 0
+    },
+    {
+      "office_id": 20,
+      "firm_id": 12,
+      "street": "1201 Sussex Turnpike",
+      "suite": null,
+      "city": "Randolph",
+      "state": "NJ",
+      "zip": "07869",
+      "phone": "(973) 895-4400",
+      "gbp_url": "https://www.google.com/maps/place/Heymann+%26+Fletcher/@40.8268169,-74.5742573,630m/data=!3m2!1e3!4b1!4m6!3m5!1s0x89c3a1c63957d08f:0x642d0747b63ea7f8!8m2!3d40.8268169!4d-74.5742573!16s%2Fg%2F1td1fbwp",
+      "gbp_rating": 4.0,
+      "gbp_review_number": 39
+    },
+    {
+      "office_id": 21,
+      "firm_id": 13,
+      "street": "4170 US Highway 9",
+      "suite": "Box 412",
+      "city": "Howell",
+      "state": "NJ",
+      "zip": "07731",
+      "phone": "(732) 414-6669",
+      "gbp_url": null,
+      "gbp_rating": 0.0,
+      "gbp_review_number": 0
+    },
+    {
+      "office_id": 22,
+      "firm_id": 14,
+      "street": "One Newark Center, 1085 Raymond Blvd",
+      "suite": "21st Floor",
+      "city": "Newark",
+      "state": "NJ",
+      "zip": "07102",
+      "phone": "973-474-5003",
+      "gbp_url": "https://www.google.com/maps/place/Cohen+Seglias+Pallas+Greenhall+%26+Furman+PC/@40.7365414,-74.1662599,631m/data=!3m2!1e3!4b1!4m6!3m5!1s0x89c3b66218526c69:0x61575ba7c3f5dc99!8m2!3d40.7365414!4d-74.1662599!16s%2Fg%2F12604mkwr",
+      "gbp_rating": 5.0,
+      "gbp_review_number": 1
     }
   ]
 }
