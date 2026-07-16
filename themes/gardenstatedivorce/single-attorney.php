@@ -52,6 +52,36 @@ $degree_labels = [
 	'BS'  => 'B.S.',
 	'MA'  => 'M.A.',
 ];
+
+// Newest graduation year first; entries missing a year fall to the end,
+// ordered JD, then LLM, then MA/MS, then BA/BS.
+$degree_rank = [
+	'JD'  => 1,
+	'LLM' => 2,
+	'MA'  => 3,
+	'MS'  => 3,
+	'BA'  => 4,
+	'BS'  => 4,
+];
+
+if ( $education ) {
+	usort( $education, function ( $a, $b ) use ( $degree_rank ) {
+		$a_year = $a['graduation_year'] ?? null;
+		$b_year = $b['graduation_year'] ?? null;
+
+		if ( $a_year && $b_year ) {
+			return $b_year <=> $a_year;
+		}
+		if ( $a_year || $b_year ) {
+			return $a_year ? -1 : 1;
+		}
+
+		$a_rank = $degree_rank[ $a['degree'] ] ?? 99;
+		$b_rank = $degree_rank[ $b['degree'] ] ?? 99;
+
+		return $a_rank <=> $b_rank;
+	} );
+}
 ?>
 
 <!-- ============================ breadcrumb ============================ -->
@@ -230,7 +260,7 @@ $degree_labels = [
                   <div>
                     <div class="rating__row">
                       <svg class="star" width="15" height="15" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>
-                      <span class="rating__score"><?php echo esc_html( $office_gbp['rating'] ); ?></span>
+                      <span class="rating__score"><?php echo esc_html( number_format( (float) $office_gbp['rating'], 1 ) ); ?></span>
                       <span class="rating__meta">Google &middot; <?php echo esc_html( $office_gbp['review_number'] ); ?> reviews</span>
                     </div>
                     <div class="rating__kind">Firm rating</div>
@@ -240,7 +270,7 @@ $degree_labels = [
                   <div>
                     <div class="rating__row">
                       <svg class="star" width="15" height="15" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>
-                      <span class="rating__score"><?php echo esc_html( $avvo['stars'] ); ?></span>
+                      <span class="rating__score"><?php echo esc_html( number_format( (float) $avvo['stars'], 1 ) ); ?></span>
                       <span class="rating__meta">Avvo &middot; <?php echo esc_html( $avvo['review_number'] ); ?> review<?php echo 1 == $avvo['review_number'] ? '' : 's'; ?> &middot; Rating: <?php echo esc_html( number_format( (float) $avvo['rating'], 1 ) ); ?></span>
                     </div>
                     <div class="rating__kind">Attorney rating</div>
@@ -259,7 +289,15 @@ $degree_labels = [
               <?php foreach ( $education as $edu ) : ?>
                 <div>
                   <div class="edu__school"><?php echo esc_html( $edu['school'] ); ?></div>
-                  <div class="edu__line"><?php echo esc_html( $degree_labels[ $edu['degree'] ] ?? $edu['degree'] ); ?>, <?php echo esc_html( $edu['graduation_year'] ); ?></div>
+                  <div class="edu__line">
+                    <?php
+                    $edu_line = $degree_labels[ $edu['degree'] ] ?? $edu['degree'];
+                    if ( ! empty( $edu['graduation_year'] ) ) {
+                      $edu_line .= ', ' . $edu['graduation_year'];
+                    }
+                    echo esc_html( $edu_line );
+                    ?>
+                  </div>
                 </div>
               <?php endforeach; ?>
             </div>
@@ -281,13 +319,20 @@ $degree_labels = [
         if ( ! empty( $other_dirs['justia_url'] ) ) {
           $dirlinks[] = [ 'label' => 'Justia', 'url' => $other_dirs['justia_url'] ];
         }
+        if ( ! empty( $super_lawyers['url'] ) ) {
+          $dirlinks[] = [ 'label' => 'Super Lawyers', 'url' => $super_lawyers['url'] ];
+        }
+        if ( ! empty( $best_lawyers['url'] ) ) {
+          $dirlinks[] = [ 'label' => 'Best Lawyers', 'url' => $best_lawyers['url'] ];
+        }
+        usort( $dirlinks, fn( $a, $b ) => strcasecmp( $a['label'], $b['label'] ) );
         ?>
         <?php if ( $dirlinks ) : ?>
           <div class="card">
             <div class="card__title">Find <?php echo esc_html( $first_name ); ?> on</div>
             <div class="dirlinks">
               <?php foreach ( $dirlinks as $link ) : ?>
-                <a class="dirlinks__item" href="<?php echo esc_url( $link['url'] ); ?>" target="_blank" rel="noopener">
+                <a class="dirlinks__item" href="<?php echo esc_url( $link['url'] ); ?>" target="_blank" rel="nofollow noopener">
                   <span><?php echo esc_html( $link['label'] ); ?></span>
                   <svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2E6F40" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"></path><path d="M20 4 11 13"></path><path d="M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"></path></svg>
                 </a>
