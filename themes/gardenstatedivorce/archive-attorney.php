@@ -2,8 +2,8 @@
 
 <!-- =============================== hero =============================== -->
     <section class="page-hero">
-      <h1 class="page-hero__title">Find a New Jersey divorce attorney you can trust.</h1>
-      <p class="page-hero__lede">This is a curated roster of New Jersey's most reputable divorce attorneys. Every listing is selected for the highest professional recognition and client ratings in the state. So you can trust whoever you choose to handle your divorce with real skill and care.</p>
+      <h1 class="page-hero__title">Find a New Jersey divorce attorney with confidence.</h1>
+      <p class="page-hero__lede">Garden State Divorce is an independent directory of New Jersey divorce attorneys, bringing together professional certifications, peer recognition, experience, and other objective credentials so you can make a more informed decision.</p>
     </section>
 
     <!-- ============================== toolbar ============================= -->

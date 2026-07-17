@@ -5,9 +5,9 @@
 <!-- =============================== hero =============================== -->
     <section class="hero">
       <div>
-        <span class="badge">A curated roster &middot; New Jersey</span>
+        <span class="badge">New Jersey Divorce Attorneys</span>
         <h1 class="hero__title">A divorce is hard enough. Finding the right attorney shouldn't be.</h1>
-        <p class="hero__lede">Garden State Divorce is a curated roster of New Jersey's most recognized divorce attorneys &mdash; every one board-certified and vetted for reputation, so you can choose with confidence.</p>
+        <p class="hero__lede">Garden State Divorce is an independent directory of New Jersey divorce attorneys, highlighting professional certifications, peer recognition, and other objective credentials to help you choose with confidence.</p>
         <div class="hero__actions">
           <a class="btn btn--primary" href="divorce-attorneys/">Find an Attorney</a>
         </div>
@@ -16,17 +16,17 @@
 
       <!-- trust panel -->
       <aside class="trust-panel">
-        <div class="trust-panel__title">Every listing is</div>
+        <div class="trust-panel__title">We highlight</div>
         <div class="trust-panel__list">
           <div class="recognition">
             <svg class="star" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>
             <div class="recognition__label">Certified Matrimonial Attorney</div>
-            <div class="recognition__detail">A NJ Supreme Court certification held by a small fraction of the bar.</div>
+            <div class="recognition__detail">New Jersey Supreme Court certification recognizing experienced family law specialists.</div>
           </div>
           <div class="recognition">
             <svg class="star" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>
             <div class="recognition__label">Super Lawyers</div>
-            <div class="recognition__detail">Peer-nominated recognition for the top attorneys in family law.</div>
+            <div class="recognition__detail">Independent peer recognition for outstanding attorneys.</div>
           </div>
           <div class="recognition">
             <svg class="star" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>
@@ -36,7 +36,7 @@
           <div class="recognition">
             <svg class="star" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>
             <div class="recognition__label">Chambers High Net Worth</div>
-            <div class="recognition__detail">Independent ranking for complex, high-asset divorces.</div>
+            <div class="recognition__detail">Independent recognition for complex, high-asset family law matters.</div>
           </div>
         </div>
       </aside>
@@ -45,28 +45,28 @@
     <!-- =============================== why =============================== -->
     <section class="section" id="why">
       <div class="kicker">Why Garden State Divorce</div>
-      <h2 class="section__title">A shortlist you can actually trust &mdash; not another phone book.</h2>
+      <h2 class="section__title">Finding the right attorney starts with better information.</h2>
       <div class="grid-3">
         <div>
           <div class="pillar__icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
           </div>
-          <div class="pillar__title">Every attorney is board-certified</div>
-          <p class="pillar__body">New Jersey certifies only a small share of its lawyers as Matrimonial Attorneys. Every listing here holds that certification.</p>
+          <div class="pillar__title">Professional certifications</div>
+          <p class="pillar__body">We identify attorneys who have earned New Jersey Supreme Court certification as Matrimonial Attorneys and clearly highlight that distinction.</p>
         </div>
         <div>
           <div class="pillar__icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"></circle><path d="M8.2 13.9 7 22l5-3 5 3-1.2-8.1"></path></svg>
           </div>
-          <div class="pillar__title">Vetted for reputation</div>
-          <p class="pillar__body">We track Super Lawyers, AV Preeminent, and Chambers ratings so you can see professional recognition at a glance.</p>
+          <div class="pillar__title">Objective recognition</div>
+          <p class="pillar__body">We highlight respected credentials like Super Lawyers, AV Preeminent, and Chambers so they're easy to compare.</p>
         </div>
         <div>
           <div class="pillar__icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3H2l8 9.5V19l4 2v-8.5L22 3z"></path></svg>
           </div>
-          <div class="pillar__title">A shortlist, not a phone book</div>
-          <p class="pillar__body">No ads and no pay-to-play. Just a curated roster of attorneys you can reach out to directly.</p>
+          <div class="pillar__title">Quality over quantity</div>
+          <p class="pillar__body">We focus on meaningful attorney profiles rather than overwhelming lists, helping you compare lawyers more efficiently.</p>
         </div>
       </div>
     </section>
@@ -75,8 +75,8 @@
     <section class="section">
       <div class="section__head">
         <div>
-          <div class="kicker">The roster</div>
-          <h2 class="section__title">Attorneys earning the top recognitions.</h2>
+          <div class="kicker">Featured Attorneys</div>
+          <h2 class="section__title">Compare New Jersey Divorce Attorneys</h2>
         </div>
         <a class="link-arrow" href="divorce-attorneys/">View all <?php echo esc_html( $gsd_attorney_count ); ?> attorneys
           <svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
@@ -88,7 +88,7 @@
         $gsd_roster_query = new WP_Query( [
           'post_type'      => 'attorney',
           'post_status'    => 'publish',
-          'posts_per_page' => 3,
+          'posts_per_page' => 4,
           'orderby'        => 'rand',
         ] );
         ?>
@@ -113,6 +113,9 @@
           if ( ! empty( get_field( 'chambers' )['listed'] ) ) {
             $creds[] = 'Chambers High Net Worth';
           }
+          // Certified Matrimonial Attorney is always checked first above, so
+          // it's already first when present; just cap the list to 2 total.
+          $creds = array_slice( $creds, 0, 2 );
           ?>
           <!-- attorney card -->
           <article class="attorney-card">
@@ -124,20 +127,22 @@
               <?php endif; ?>
             </div>
             <div class="attorney-card__body">
-              <div class="attorney-card__name"><?php the_title(); ?></div>
-              <?php if ( $firm ) : ?>
-                <div class="attorney-card__firm"><?php echo esc_html( get_the_title( $firm->ID ) ); ?></div>
-              <?php endif; ?>
-              <?php if ( $city ) : ?>
-                <div class="attorney-card__city"><?php echo esc_html( $city . ( $state ? ', ' . $state : '' ) ); ?></div>
-              <?php endif; ?>
-              <?php if ( $creds ) : ?>
-                <div class="attorney-card__creds">
-                  <?php foreach ( $creds as $cred ) : ?>
-                    <div class="attorney-card__cred"><svg class="star" width="14" height="14" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg><?php echo esc_html( $cred ); ?></div>
-                  <?php endforeach; ?>
-                </div>
-              <?php endif; ?>
+              <div class="attorney-card__info">
+                <div class="attorney-card__name"><?php the_title(); ?></div>
+                <?php if ( $firm ) : ?>
+                  <div class="attorney-card__firm"><?php echo esc_html( get_the_title( $firm->ID ) ); ?></div>
+                <?php endif; ?>
+                <?php if ( $city ) : ?>
+                  <div class="attorney-card__city"><?php echo esc_html( $city . ( $state ? ', ' . $state : '' ) ); ?></div>
+                <?php endif; ?>
+                <?php if ( $creds ) : ?>
+                  <div class="attorney-card__creds">
+                    <?php foreach ( $creds as $cred ) : ?>
+                      <div class="attorney-card__cred"><svg class="star" width="14" height="14" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg><?php echo esc_html( $cred ); ?></div>
+                    <?php endforeach; ?>
+                  </div>
+                <?php endif; ?>
+              </div>
               <a class="btn btn--primary btn--sm" href="<?php the_permalink(); ?>">View Profile</a>
             </div>
           </article>
@@ -149,7 +154,7 @@
     <section class="cta-band">
       <div>
         <div class="cta-band__title">Ready to talk to someone who can help?</div>
-        <p class="cta-band__body">Browse the full roster of certified New Jersey divorce attorneys and reach out directly &mdash; no middleman, no referral fees.</p>
+        <p class="cta-band__body">Browse our directory of New Jersey divorce attorneys and contact the lawyers who best match your needs.</p>
       </div>
       <a class="btn btn--onDark" href="/divorce-attorneys/">Find an Attorney</a>
     </section>

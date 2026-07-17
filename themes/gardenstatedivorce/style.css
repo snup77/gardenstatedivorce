@@ -280,18 +280,19 @@ img { max-width: 100%; display: block; }
 .pillar__title { font-size: 21.25px; font-weight: 600; color: var(--ink); margin-top: 22.5px; }
 .pillar__body { font-size: 18.125px; color: var(--muted); line-height: 1.6; margin-top: 11.25px; }
 
-.roster { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 47.5px; }
-.attorney-card { border: 1.25px solid var(--border-2); border-radius: var(--radius-md); overflow: hidden; background: #fff; }
-.attorney-card__photo { position: relative; overflow: hidden; height: 500px; }
+.roster { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-top: 47.5px; }
+.attorney-card { display: flex; flex-direction: column; border: 1.25px solid var(--border-2); border-radius: var(--radius-md); overflow: hidden; background: #fff; }
+.attorney-card__photo { position: relative; overflow: hidden; height: 325px; }
 .attorney-card__photo .placeholder__label { padding-bottom: 15px; }
 .attorney-card__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.attorney-card__body { padding: 27.5px 27.5px 30px; }
+.attorney-card__body { display: flex; flex-direction: column; flex: 1; padding: 27.5px 27.5px 30px; }
+.attorney-card__info { margin-bottom: 25px; }
 .attorney-card__name { font-family: var(--serif); font-size: 25px; font-weight: 600; color: var(--ink); }
 .attorney-card__firm { font-size: 17.5px; color: var(--muted); margin-top: 3.75px; }
 .attorney-card__city { font-size: 16.875px; color: var(--muted-2); margin-top: 10px; }
 .attorney-card__creds { display: flex; flex-direction: column; gap: 7.5px; margin-top: 17.5px; }
 .attorney-card__cred { display: flex; align-items: center; gap: 10px; font-size: 16.25px; color: #2c342e; }
-.attorney-card .btn { margin-top: 25px; width: 100%; justify-content: center; }
+.attorney-card .btn { margin-top: auto; width: 100%; justify-content: center; }
 
 .cta-band {
   background: var(--green);
