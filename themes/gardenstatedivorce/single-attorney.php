@@ -254,7 +254,10 @@ if ( $education ) {
                 <?php echo esc_html( $email ); ?>
               </div>
             <?php endif; ?>
-            <?php if ( ! empty( $office_gbp['rating'] ) || ! empty( $avvo['rating'] ) ) : ?>
+            <?php
+            $avvo_has_data = ! empty( $avvo['stars'] ) || ! empty( $avvo['review_number'] );
+            ?>
+            <?php if ( ! empty( $office_gbp['rating'] ) || $avvo_has_data ) : ?>
               <div class="office__ratings">
                 <?php if ( ! empty( $office_gbp['rating'] ) ) : ?>
                   <div>
@@ -266,12 +269,17 @@ if ( $education ) {
                     <div class="rating__kind">Firm rating</div>
                   </div>
                 <?php endif; ?>
-                <?php if ( ! empty( $avvo['rating'] ) ) : ?>
+                <?php if ( $avvo_has_data ) : ?>
                   <div>
                     <div class="rating__row">
                       <svg class="star" width="15" height="15" viewBox="0 0 24 24"><path d="M12 2l2.9 6.26 6.85.6-5.2 4.52 1.56 6.7L12 17.27 5.89 20.58l1.56-6.7-5.2-4.52 6.85-.6z"></path></svg>
                       <span class="rating__score"><?php echo esc_html( number_format( (float) $avvo['stars'], 1 ) ); ?></span>
-                      <span class="rating__meta">Avvo &middot; <?php echo esc_html( $avvo['review_number'] ); ?> review<?php echo 1 == $avvo['review_number'] ? '' : 's'; ?> &middot; Rating: <?php echo esc_html( number_format( (float) $avvo['rating'], 1 ) ); ?></span>
+                      <span class="rating__meta">
+                        Avvo &middot; <?php echo esc_html( $avvo['review_number'] ); ?> review<?php echo 1 == $avvo['review_number'] ? '' : 's'; ?>
+                        <?php if ( ! empty( $avvo['rating'] ) ) : ?>
+                          &middot; Rating: <?php echo esc_html( number_format( (float) $avvo['rating'], 1 ) ); ?>
+                        <?php endif; ?>
+                      </span>
                     </div>
                     <div class="rating__kind">Attorney rating</div>
                   </div>
