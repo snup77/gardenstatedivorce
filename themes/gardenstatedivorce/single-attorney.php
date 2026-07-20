@@ -200,7 +200,7 @@ if ( $education ) {
     <div class="profile-body">
 
       <!-- main column -->
-      <main class="profile-main">
+      <article class="profile-main">
         <h2 class="profile-main__heading">About <?php echo esc_html( $first_name ); ?></h2>
         <div class="prose">
           <?php echo $biography; ?>
@@ -219,7 +219,7 @@ if ( $education ) {
             <?php endforeach; ?>
           </div>
         <?php endif; ?>
-      </main>
+      </article>
 
       <!-- sidebar -->
       <aside class="profile-sidebar">
