@@ -208,12 +208,24 @@ class GSD_Import_Command {
 	private function upsert_post( $post_type, $meta_key, $source_id, $title ) {
 		$existing_id = $this->find_by_source_id( $post_type, $meta_key, $source_id );
 
-		$post_id = wp_insert_post( [
+		$post_args = [
 			'ID'          => $existing_id ?: 0,
 			'post_type'   => $post_type,
 			'post_title'  => $title,
 			'post_status' => 'publish',
-		], true );
+		];
+
+		// Preserve the original post_date on updates. Without this,
+		// wp_insert_post() resets it to "now" on every import run, which
+		// makes WordPress core log a new _wp_old_date meta row each time
+		// (its old-permalink-redirect tracking) — unbounded, pointless growth.
+		if ( $existing_id ) {
+			$existing_post = get_post( $existing_id );
+			$post_args['post_date']     = $existing_post->post_date;
+			$post_args['post_date_gmt'] = $existing_post->post_date_gmt;
+		}
+
+		$post_id = wp_insert_post( $post_args, true );
 
 		if ( is_wp_error( $post_id ) ) {
 			WP_CLI::warning( "{$post_type} \"{$title}\": " . $post_id->get_error_message() );
